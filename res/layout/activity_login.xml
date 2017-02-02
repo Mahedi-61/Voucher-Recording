@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/myPrimaryColor">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTitle1LA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5.0dp"
+                    android:text="Voucher"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#ffb7dee2"
+                    android:textSize="25.0sp"
+                    android:textStyle="italic"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvTitle2LA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dp"
+                    android:text="Recording"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#ffb7dee2"
+                    android:textSize="25.0sp"
+                    android:textStyle="italic"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="80dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etUserIdLA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:hint="User Id"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/hint_foreground_material_dark" />
+
+                <requestFocus />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPasswordLA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:hint="Password"
+                    android:inputType="textWebPassword"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/hint_foreground_material_dark" />
+
+                <requestFocus />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbRemeberUserIdLA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:text="Remember User Id"
+                    android:textColor="#FFF"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.0dip"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/bLoginLA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:background="@drawable/b_login"
+                    android:gravity="center"
+                    android:text="Log in"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp" />
+            </TableRow>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvForgotPasswordLA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Forgot password ?"
+        android:textColor="#FFF"
+        android:textSize="14.0sp" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:title="Add Income or Expense"
+        android:id="@+id/action_content_add"
+        android:icon="@mipmap/ic_content_add"
+        android:orderInCategory="100"
+        android:visible="true"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,38 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#009688</color>
+    <color name="myPrimaryDarkColor">#00796b</color>
+    <color name="myPrimaryBottomColor">#004d40</color>
+    <color name="myAccentColor">#00bfa5</color>
+    <color name="myDrawerBackground">#FFF</color>
+    <color name="myWindowBackground">#FFF</color>
+    <color name="myTextPrimaryColor">#e0f2f1</color>
+    <color name="myNavigationColor">#000</color>
+    <color name="dialogColor">#b2dfdb</color>
+
+    <drawable name="pressed_gray">#0c000000</drawable>
+    <drawable name="selected_gray">#2c000000</drawable>
+
+    <color name="tabsScrollColor">#8a140e</color>
+
+    <color name="text_color_hint">#ffb1b1b1</color>
+    <color name="edittext_hint">#ffb4b4b4</color>
+    <color name="edittext_bg">@null</color>
+    <color name="text_color">#ff000000</color>
+    <color name="divider_color">#ffdfdfdf</color>
+
+    <color name="button_text_color">#FFF</color>
+    
+    <color name="radio_normal_bg">#ffffffff</color>
+    <color name="radio_text_checked">#ffffffff</color>
+    <color name="radio_text_normal">#ff0e90a0</color>
+
+</resources>

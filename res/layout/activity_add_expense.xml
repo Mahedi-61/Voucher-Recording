@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/myWindowBackground"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/etDateAE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:layout_marginTop="@dimen/control_padding"
+                    android:layout_weight="1.0"
+                    android:background="@color/edittext_bg"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Date"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="@dimen/edittext_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tvCategoryAE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/etCategoryAE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:layout_marginTop="@dimen/control_padding"
+                    android:layout_weight="1.0"
+                    android:background="@color/edittext_bg"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Category"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="@dimen/edittext_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tvNoteAE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/etNoteAE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80.0dip"
+                    android:layout_marginTop="@dimen/control_padding"
+                    android:layout_weight="1.0"
+                    android:background="@color/edittext_bg"
+                    android:ems="10"
+                    android:gravity="top|left|center"
+                    android:hint="Note"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:paddingTop="5.0dip"
+                    android:singleLine="false"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="@dimen/edittext_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tvAmountAE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/etAmountAE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:layout_marginTop="@dimen/control_padding"
+                    android:layout_weight="1.0"
+                    android:background="@color/edittext_bg"
+                    android:ems="10"
+                    android:hint="Amount"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="@dimen/edittext_font_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <Button
+                    android:id="@+id/bDeleteAE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginTop="@dimen/control_padding"
+                    android:layout_weight="1.0"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_button_voucherrecording"
+                    android:text="Delete"
+                    android:visibility="gone"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bSaveAE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginTop="@dimen/control_padding"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_button_voucherrecording"
+                    android:text="Save"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

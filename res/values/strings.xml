@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Voucher Recording</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="about_this_app"> <![CDATA[
+
+            <h6><font color="#008A43">ডিভাইস সেটিংস এ্যাপ্লিকেশনটি ব্যবহারের নিয়মাবলীঃ </font></h6>
+            <h5><font color="#008A43">Device Settings</font></h5>
+                 Daily Report can be kept using this layout. Save button should be pressed for saving report in any dates.
+                 After changing any data update button should be pressed to save changes. Using left and right navigation arrow
+                 previous report for any dates can be kept. Only number digit can be used as input in this layout.
+                 Each input box supports maximum four digit input.
+            <br />
+
+            <h5><font color="#008A43">Option Menu</font></h5>
+                 By pressing a button in the top left corner or sliding on the screen through left to right
+                 in the <b>Device Settings</b> layout will open a navigation drawer of this app. It can be closed in reverse way.
+                 Following options can be found on this drawer.
+
+            <h5><font color="#008A43">1. Daily Report: </font></h5>
+            এই লে-আউট এর মাধ্যমে মূল ব্যক্তিগত রিপোর্ট বইয়ের দৈনিক রিপোর্ট সংরক্ষণ পৃষ্ঠার মতো লে-আউট ভিউ দেখা যাবে। উপরে ডান ও বাম এ্যারো বাটনের মাধ্যমে যেকোন মাসের রিপোর্ট দেখা যাবে
+            <br />
+
+            <h5><font color="#008A43">2. Monthly Report: </font></h5>
+            This layout shows the Monthly Report. Here calculated report  upto that date of that month can be seen. Besides,
+            additional items required for presenting  monthly report can be kept. In this case, Save button should be pressed to save data.
+            Here the method of calcualting average data has been followed on the basis of number of days  an item is performed.
+            Any month report can be seen by pressing left and right arrow on the top.
+            <br/>
+
+            <h5><font color="#008A43">3. Monthly Plan:</font></h5>
+            এই লে-আউট এর মাধ্যমে মাসিক পরিকল্পণা সংরক্ষণ করা যাবে। প্রতিবার ডেটা ইনপুট দেয়া শেষে অবশ্যই সেভ বাটন প্রেস করে ডেটা সেভ করতে হবে। উপরে ডান ও বাম এ্যারো বাটনের মাধ্যমে যেকোন মাসের পরিকল্পনায় নেভিগেট করা যাবে।
+            Monthly Plan can be kept using this layout. Each time after entering data  Save button should be pressed for saving data. Using left and right arrow on the top any monthly paln can be navigated.
+            <br />
+
+            <h5><font color="#008A43">4. Statistical Analysis:</font></h5> এই লে-আউট এর মাধ্যমে মাসিক পরিকল্পণার শতকরা কত অংশ কাজ বাস্তবায়ন হলো তার হিসেব দেখা যাবে। মাসিক রিপোর্টের কোন আইটেমের পরিকল্পণা না থাকলে অথবা শূন্য নিলে তার শতকরা হিসাব দেখানো হয়নি।  <b>Device Settings</b> লে-আউট এ যে সকল আইটেমগুলো ফিল-আপ করতে হয় শুধু মাত্র সেসব আইটেমগুলোর শতকরা হিসেব দেখানো হয়েছে। শতকরা হিসেবে দশমিকের পরবর্তী স্থানগুলো দেখানো হয়নি।
+            <br />
+
+            <h5><font color="#008A43">5. Search Report:</font></h5>
+            এই লে-আউট এর মাধ্যমে পূর্বের যেকোন সময়ের রিপোর্ট খুঁজে পাওয়া যাবে। লিস্টের <b>Search By Day </b>আইটেমটির মাধ্যমে পূর্বের যেকোন দিনের রিপোর্ট পাওয়া যাবে। <b>Search By Month</b> আইটেমটির মাধ্যমে পূর্বের যেকোন মাসের মাসিক রিপোর্ট দেখা যাবে। এছাড়া আজ থেকে পূর্বের যেকোন দিন পর্যন্ত রিপোর্টর গড় হিসেব পেতে <b>Search By Previous Days</b> আইটেমটি প্রেস করতে হবে। এ আইটিমটি প্রেস করলে একটি ইনপুট বক্স আসবে যেখানে সর্বোচ্চ তিন ডিজিট পর্যন্ত দিন সংখ্যা ইনপুট দেয়া যাবে। এটি মূলত বিগত দিন যেমন ৯০ দিন (৩ মাস), ১৮০ দিন (৬ মাস) বা ৩৬৫ দিন (১ বছর) রিপোর্টের গড় হিসেব পাওয়ার জন্য বিশেষভাবে প্রস্তূত করা হয়েছে।
+            <br />
+
+            <h5><font color="#008A43">6. Settings:</font></h5> এই লে-আউটের মাধ্যমে এ্যাপ্লিকেশনের বিভিন্ন settings যেমন ইউজারের বিভিন্ন ডেটা সংরক্ষণ, লগইন পাসওয়ার্ড পরিবর্তন, ইমেল অ্যাড্রেস সেট, রিমাইন্ডার চালুসহ ডেটাবেজ ইম্পোর্ট এক্সপোর্ট ইত্যাদি কন্ট্রোল করা যাবে। ডেটাবেজ এক্সপোর্টের ক্ষেত্রে এক্সপোর্টকৃত ডেটাবেজ sdcard এর root এ সেভ হবে এবং ইম্পোর্ট করার ক্ষেত্রে ইম্পোর্টকৃত ডেটাবেসটি sdcard এর root এ রাখতে হবে। <font color="#FF0000">এখানে লক্ষ্যনীয় যে ডেটাবেস ইম্পোর্ট করলে সেটি বর্তমান ডেটাবেস এর উপর orverride হবে। ফলে বর্তমান ডেটাবেজ কোন ডেটা থাকলে তা হারিয়ে যেতে পারে। এজন্য ডেটাবেজ ইম্পোর্ট করার প্রয়োজন হলে তা এ্যাপ্লিকেশনের ইন্সটলের পর পরই করে ফেলতে হবে।</font>
+            <br />
+    ]]></string>
+
+    </resources>
+

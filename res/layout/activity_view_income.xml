@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/myWindowBackground"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8.0dp">
+
+        <RadioGroup
+            android:id="@+id/rbSelectorVI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rbMonthlyVI"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/rad_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                android:checked="true"
+                android:text="Monthly"
+                android:textColor="@drawable/rad_text_selector" />
+
+            <RadioButton
+                android:id="@+id/rbYearlyVI"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/rad_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="6.0dip"
+                android:paddingTop="6.0dip"
+                android:text="Yearly"
+                android:textColor="@drawable/rad_text_selector" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:background="@color/myPrimaryColor">
+
+        <ImageButton
+            android:id="@+id/ibPreviousExpenseVI"
+            android:layout_width="35.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/b_arrow_left" />
+
+        <TextView
+            android:id="@+id/tvTitleVI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ekhane date hobe"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/ibNextExpenseVI"
+            android:layout_width="35.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/b_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_color" />
+
+    <ListView
+        android:id="@+id/lvExpenseVI"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1.0dip"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/myPrimaryBottomColor">
+
+        <TextView
+            android:id="@+id/tvTotalAmountVI"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10.0dip"
+            android:gravity="right"
+            android:text="12056"
+            android:textColor="@color/myWindowBackground"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>
